@@ -9,7 +9,7 @@ License:        Mixed (GNU GPL, GNU LGPL, MIT X11 and MPL)
 URL:            http://www.mono-project.com/
 Source0:        mono-3.2.8.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-BuildRequires:  gcc-c++
+BuildRequires:  gcc-c++ autoconf libtool automake gettext
 Requires: bzip2
 %description
 Mono is a software platform designed to allow developers to easily create cross platform applications.
