@@ -1,4 +1,6 @@
 # $Id$
+%define debug_package %{nil}
+
 Name:           km3mono
 Version:        3.2.8
 Release:        1
