@@ -36,11 +36,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,-)
 /usr/local/etc/mono
-/usr/local/bin/*
-/usr/local/lib/*
-/usr/local/include/mono-2.0/*
-/usr/local/share/man/man1/*
-/usr/local/share/man/man5/*
-/usr/local/share/mono2.0/mono
-/usr/local/share/libgc-mono
+/usr/local/bin/
+/usr/local/lib/
+/usr/local/include/mono-2.0
+/usr/local/share/man/
+/usr/local/share/man/
+/usr/local/share/
 %changelog
