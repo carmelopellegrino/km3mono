@@ -2,14 +2,14 @@
 %define debug_package %{nil}
 
 Name:           km3mono
-Version:        3.2.8
+Version:        3.12.1
 Release:        1
 Summary:        The Mono developing framework.
 
 Group:          System Environment/Libraries
 License:        Mixed (GNU GPL, GNU LGPL, MIT X11 and MPL)
 URL:            http://www.mono-project.com/
-Source0:        mono-3.2.8.tar.bz2
+Source0:        mono-3.12.1.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  gcc-c++ autoconf libtool automake gettext
 Requires: bzip2
@@ -17,7 +17,7 @@ Requires: bzip2
 Mono is a software platform designed to allow developers to easily create cross platform applications.
 
 %prep
-%setup -q -n mono-3.2.8
+%setup -q -n mono-3.12.1
 
 %build
 ./configure --prefix=$RPM_BUILD_ROOT/usr/local
