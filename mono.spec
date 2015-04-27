@@ -20,13 +20,13 @@ Mono is a software platform designed to allow developers to easily create cross 
 %setup -q -n mono-3.12.1
 
 %build
-./configure --prefix=$RPM_BUILD_ROOT/usr/local
+./configure --prefix=/usr/local
 make
 
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr/local
-make install
+make DESTDIR=$RPM_BUILD_ROOT/usr/local/ install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
