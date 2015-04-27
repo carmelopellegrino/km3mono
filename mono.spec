@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(644,root,root,-)
+%defattr(-,root,root,-)
 /usr/local/etc/mono
 /usr/local/bin/
 /usr/local/lib/
