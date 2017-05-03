@@ -17,7 +17,7 @@ Requires: bzip2
 Mono is a software platform designed to allow developers to easily create cross platform applications.
 
 %prep
-%setup -q -n mono-4.8.0.495
+%setup -q -n mono-4.8.0
 
 %build
 ./configure --prefix=/usr/local
